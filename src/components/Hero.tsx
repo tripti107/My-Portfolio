@@ -1,19 +1,22 @@
-import React from 'react';
-import { ChevronDown, Download, Github, Linkedin } from 'lucide-react';
+import React from "react";
+import { ChevronDown, Download, Github, Linkedin } from "lucide-react";
 
 const Hero: React.FC = () => {
   const scrollToAbout = () => {
-    const element = document.getElementById('about');
+    const element = document.getElementById("about");
     if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
+      element.scrollIntoView({ behavior: "smooth" });
     }
   };
 
   return (
-    <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden">
+    <section
+      id="home"
+      className="min-h-screen flex items-center justify-center relative overflow-hidden"
+    >
       {/* Background gradient */}
       <div className="absolute inset-0 bg-gradient-to-br from-blue-50 via-white to-indigo-50"></div>
-      
+
       {/* Animated background elements */}
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute -top-40 -right-40 w-80 h-80 bg-blue-200/30 rounded-full blur-3xl animate-pulse"></div>
@@ -25,30 +28,49 @@ const Hero: React.FC = () => {
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 mb-6">
             Hi, I'm <span className="text-blue-600">Tripti Khandelwal</span>
           </h1>
-          
+
           <p className="text-xl sm:text-2xl text-gray-600 mb-8 max-w-3xl mx-auto leading-relaxed">
-            Frontend Developer passionate about creating beautiful, responsive web applications
+            Frontend Developer passionate about creating beautiful, responsive
+            web applications
           </p>
 
           <div className="flex flex-col sm:flex-row justify-center items-center space-y-4 sm:space-y-0 sm:space-x-6 mb-12">
-            <button className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-lg font-medium transition-all duration-200 transform hover:scale-105 shadow-lg hover:shadow-xl flex items-center space-x-2">
+            <a
+              href="https://docs.google.com/document/d/1ecNrbd6UIMQh2LZUp4Gf9ffXLE6akf2lutY-UTG6fp0/edit?usp=sharing"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-lg font-medium transition-all duration-200 transform hover:scale-105 shadow-lg hover:shadow-xl flex items-center space-x-2"
+            >
               <Download className="h-5 w-5" />
-              <span>Download Resume</span>
-            </button>
-            
+              <span>View Resume</span>
+            </a>
+
             <div className="flex space-x-4">
-              <button className="p-3 bg-white hover:bg-gray-50 text-gray-700 rounded-lg shadow-md hover:shadow-lg transition-all duration-200 transform hover:scale-105">
+              <a
+                href="https://github.com/tripti107"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="p-3 bg-white hover:bg-gray-50 text-gray-700 rounded-lg shadow-md hover:shadow-lg transition-all duration-200 transform hover:scale-105"
+              >
                 <Github className="h-6 w-6" />
-              </button>
-              <button className="p-3 bg-white hover:bg-gray-50 text-gray-700 rounded-lg shadow-md hover:shadow-lg transition-all duration-200 transform hover:scale-105">
+              </a>
+
+              <a
+                href="https://www.linkedin.com/in/triptikhandelwal107/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="p-3 bg-white hover:bg-gray-50 text-gray-700 rounded-lg shadow-md hover:shadow-lg transition-all duration-200 transform hover:scale-105"
+              >
                 <Linkedin className="h-6 w-6" />
-              </button>
+              </a>
             </div>
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 max-w-2xl mx-auto mb-16">
             <div className="text-center">
-              <div className="text-2xl font-bold text-blue-600 mb-1">Fresh Graduate</div>
+              <div className="text-2xl font-bold text-blue-600 mb-1">
+                Fresh Graduate
+              </div>
               <div className="text-gray-600">B.Tech Completed</div>
             </div>
             <div className="text-center">
@@ -56,7 +78,9 @@ const Hero: React.FC = () => {
               <div className="text-gray-600">Projects Built</div>
             </div>
             <div className="text-center">
-              <div className="text-2xl font-bold text-blue-600 mb-1">Frontend</div>
+              <div className="text-2xl font-bold text-blue-600 mb-1">
+                Frontend
+              </div>
               <div className="text-gray-600">Specialization</div>
             </div>
           </div>
