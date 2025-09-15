@@ -14,7 +14,7 @@ const Footer: React.FC = () => {
           </div>
 
           <div className="flex items-center text-gray-300">
-            <span>Made </span>
+            <span>Made&nbsp;</span>
             {/* <Heart className="h-4 w-4 text-red-400 mx-2 animate-pulse" /> */}
             <span>by Tripti Khandelwal © {currentYear}</span>
           </div>
